@@ -1,0 +1,87 @@
+<ion-content [fullscreen]="true">
+    <ion-header>
+      <div class="titulo">
+        <ion-title>Treiny</ion-title>
+      </div>
+    </ion-header>
+  
+    <div class="back">
+      <ion-button (click)="showLogoutAlert()" class="icon-button">
+        <ion-icon name="menu-outline" slot="icon-only" size="large"></ion-icon>
+      </ion-button>
+    </div>
+
+    <div class="profile-header">
+      <img src="https://png.pngtree.com/png-vector/20191009/ourmid/pngtree-user-icon-png-image_1796659.jpg" alt="Foto de Perfil" class="profile-image">
+    </div>
+    <br> <br>
+    <div class="profile-container">
+      <div class="profile-body">
+        <ul class="profile-list">
+          <li class="profile-field">
+            <span class="field-label">Nome:</span>
+            <span class="field-value">{{ userName || 'Carregando...' }}</span>
+          </li>
+          <li class="profile-field">
+            <span class="field-label">Idade:</span>
+            <span class="field-value">{{ userAge !== null ? userAge + ' anos' : 'Carregando...' }}</span>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+<br> 
+  <div class="profile-container">
+    <div class="profile-body">
+      <ul class="profile-list">
+        
+
+          <li class="profile-field">
+            <span class="field-label">Peso:</span>
+            <span class="field-value">70 kg</span>
+          </li>
+          <li class="profile-field">
+            <span class="field-label">Altura:</span>
+            <span class="field-value">1.75 m</span>
+          </li>
+          <li class="profile-field">
+            <span class="field-label">Massa Magra:</span>
+            <span class="field-value">60 kg</span>
+          </li>
+          <li class="profile-field">
+            <span class="field-label">Gordura:</span>
+            <span class="field-value">10%</span>
+          </li>
+          <li class="profile-field">
+            <span class="field-label">Calorias diárias:</span>
+            <span class="field-value">2000 kcal</span>
+          </li>
+          <li class="profile-field">
+            <span class="field-label">Litros de água:</span>
+            <span class="field-value">2 litros</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="evolution-table">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Evolução</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i class="icon fas fa-plus-circle"></i> Ganho de Massa:</td>
+            <td>5 kg</td>
+          </tr>
+          <tr>
+            <td><i class="icon fas fa-minus-circle"></i> Perda de Gordura:</td>
+            <td>2%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </ion-content>
+  
