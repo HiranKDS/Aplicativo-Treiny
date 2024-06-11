@@ -1,0 +1,140 @@
+#container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  .titulo{
+    margin-top: 30px;
+    font-size: large;
+    font-family: cursive;
+    color: rgb(0, 255, 0);
+  }
+  ion-content {
+    --background: rgb(0, 0, 0); 
+  }
+  ion-tab-bar{--background: rgb(15, 15, 15);}
+  
+  .custom-button {
+    color: rgb(0, 255, 0);
+    
+  }
+  
+  .destaque{
+    color: rgb(255, 255, 255);
+    
+  }
+
+  .back{
+    color: rgb(0, 255, 0);
+  margin-left: 330px;
+  position: absolute;
+  top: 9px;
+
+
+  }
+
+  .icon-button {
+    --background: transparent; /* Remove o fundo do botão */
+    --color: rgb(0, 255, 0);
+    --background-activated: transparent; /* Remove o fundo ao ser ativado */
+    --background-focused: transparent; /* Remove o fundo ao ser focado */
+    --background-hover: transparent; /* Remove o fundo ao ser "hovered" */
+    --ripple-color: transparent;
+  }
+
+  .profile-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #363636;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 0px;
+  
+    margin-top: 70px;
+    position: static;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 50px;
+}
+
+.profile-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-field {
+    margin-bottom: 10px;
+}
+
+.field-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.field-value {
+    display: inline-block;
+}
+
+
+
+.evolution-table {
+  margin-top: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.evolution-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.evolution-table th,
+.evolution-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  color: #fff;
+}
+
+
+.icon {
+  margin-right: 5px;
+}
+
+/* Ícones */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");

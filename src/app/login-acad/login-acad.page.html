@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  
+  <ion-title></ion-title>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-header collapse="condense">
+
+
+  <div class="icon">
+  <ion-icon name="barbell-outline"></ion-icon>
+</div>
+
+
+
+    <div class="text">
+    <p>Personal Treiner <span class="destaque">Treiny!</span> </p> 
+    
+    
+    </div>
+
+
+    <form [formGroup]="logar" (ngSubmit)="submitForm()" novalidate >
+      <ion-item >
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" formControlName="email"></ion-input>
+      </ion-item>
+
+      <!--Mensagens de Erro-->
+      <span *ngIf="logar.get('email')?.touched &&
+      logar.get('email')?.errors?.['required']">Email é obrigatório</span>
+      <span  *ngIf="logar.get('email')?.dirty &&
+      logar.get('email')?.errors?.['email']">Formato de Email Inválido</span>
+      <!--Mensagens de Erro-->
+
+      <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input type="password" formControlName="senha"></ion-input>
+      </ion-item>
+      
+            <!--Mensagens de Erro-->
+            <span *ngIf="logar.get('senha')?.touched &&
+            logar.get('senha')?.errors?.['required']">Senha é obrigatória</span>
+            <span  *ngIf="logar.get('senha')?.dirty &&
+            logar.get('senha')?.errors?.['minlength']">A senha é de no mínimo 6 caracteres</span>
+            <!--Mensagens de Erro-->
+            <br><br>
+      <ion-button expand="full"  class="custom-button-e" type="submit">Entrar</ion-button>
+  
+
+      
+    </form>
+    
+  </ion-header>
+  
+</ion-content>
+<div class="text2">
+  Não tem cadastro </div>
+    <ion-button routerLink="/cadastro" fill="clear" class="custom" size="small">Clique Aqui</ion-button>
+
+<div class="text3">
+  Voltar para login aluno </div>
+    <ion-button routerLink="/login" fill="clear" class="custom2" size="small">Clique Aqui</ion-button>
